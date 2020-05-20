@@ -30,6 +30,7 @@ from numpy.random import randn
 
 N = 1000
 r = 100
+k = 5
 
 DPP = FiniteDPP('likelihood',
                 **{'L_eval_X_data': (example_eval_L_linear, randn(N, r))})
