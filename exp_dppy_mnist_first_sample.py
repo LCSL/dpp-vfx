@@ -1,4 +1,4 @@
-from sklearn.gaussian_process.kernels import RBF, PairwiseKernel
+from sklearn.gaussian_process.kernels import RBF, PairwiseKernel, Kernel
 from sklearn.datasets import fetch_openml
 from sklearn.utils.random import sample_without_replacement
 import matplotlib.pyplot as plt
