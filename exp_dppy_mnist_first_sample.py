@@ -1,5 +1,5 @@
 from sklearn.gaussian_process.kernels import RBF, PairwiseKernel
-from sklearn.datasets import fetch_mldata
+from sklearn.datasets import fetch_openml
 from sklearn.utils.random import sample_without_replacement
 import matplotlib.pyplot as plt
 import numpy as np
@@ -39,7 +39,7 @@ class FastMixinKernel(Kernel):
     def is_stationary(self):
         return self.gp_kernel.is_stationary()
 
-mnist = fetch_mldata('MNIST original', data_home='~/python/datasets/mldata/')
+mnist = fetch_openml('mnist_784', version=1, cache=True, data_home='~/python/datasets/')
 
 n_list = np.linspace(1000, 70000, 15)
 
