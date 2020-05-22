@@ -1,5 +1,4 @@
 from sklearn.gaussian_process.kernels import RBF, PairwiseKernel, DotProduct, Kernel
-from sklearn.datasets import fetch_mldata
 from sklearn.utils.random import sample_without_replacement
 import matplotlib.pyplot as plt
 import numpy as np
